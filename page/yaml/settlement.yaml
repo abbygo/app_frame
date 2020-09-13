@@ -1,0 +1,68 @@
+select_pick_up_point:
+#点击选择自提点--》
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_no_addr"
+   action: click
+add_pick_up_point:
+#添加自提点：--》点击添加新地址--》输入提货人--》输入提货人手机->选择收货地址-》->选择具体的单元-》点击保存
+#点击返回按钮回到结算页面
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_no_addr"
+   action: click
+ - by: xpath
+   locator: "//*[@text='添加新地址']"
+   action: click
+ - by: id
+   locator: "com.xfyoucai.youcai:id/mPickupNameEtn"
+   action: send
+   value: ${name}
+ - by: id
+   locator: "com.xfyoucai.youcai:id/mMobilPhoneEtn"
+   action: send
+   value: ${phone}
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_company_name"
+   action: click_by_index
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_text"
+   action: click_by_index
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_sure"
+   action: click
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_right_1"
+   action: click
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_img_right_1"
+   action: click
+#检查是否有添加地址
+is_addr:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_no_addr"
+   action: len > 0
+
+#需要滑动操作，页面过长
+slide_to_bottom:
+ - text: "余额明细"
+   action: scroll
+#检查是否有展示商品详情按钮
+is_open_item_but:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/downArrowImg"
+   action: len > 0
+open_item_list:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/downArrowImg"
+   action: click
+
+view_balance:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/yueRelayout"
+   action: click
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_left_back"
+   action: click
+goto_pay_page:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_pay"
+   action: click

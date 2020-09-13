@@ -1,0 +1,24 @@
+get_first_item_name:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/robName"
+   action: get_text_by_index
+   index: 0
+goto_commodity_details:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/robName"
+   action: click_by_index
+   index: 0
+#需要滑动操作，页面过长
+slide_to_bottom:
+ - text: "新鲜放心肉"
+   action: scroll
+add_item_to_shop_cart:
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/buyCarImg' and @enabled='true']"
+   action: click_by_index
+
+goto_category:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/kindName"
+   action: click
+

@@ -1,0 +1,23 @@
+search_item:
+#点击搜索框-》选择搜索内容--》点击加入购物车按钮
+ - by: id
+   locator: "com.xfyoucai.youcai:id/searchLayout"
+   action: click
+ - by: id
+   locator: "com.xfyoucai.youcai:id/contentLable"
+   action: click
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/buyCarImg' and @enabled='true']"
+   action: click_by_index
+switch_category:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/subTitle"
+   action: click_by_index
+add_item:
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/buyCarImg' and @enabled='true']"
+   action: click_by_index
+is_goto_category:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/mTitleTv"
+   action: len > 0

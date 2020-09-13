@@ -1,0 +1,20 @@
+goto_home:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_home"
+   action: click
+goto_category:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_category"
+   action: click
+goto_shoping_cart:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_shop_car"
+   action: click
+goto_profile:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_order"
+   action: click
+get_shopping_cart_count:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_shop_cart_count"
+   action: text

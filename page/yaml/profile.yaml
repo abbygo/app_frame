@@ -1,0 +1,20 @@
+go_to_pay_order:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/no_pay"
+   action: click
+go_to_send:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/ll_send"
+   action: click
+go_to_get:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/ll_get"
+   action: click
+go_to_envaluate:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/ll_pingjia"
+   action: click
+get_all_order:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_all_order"
+   action: click

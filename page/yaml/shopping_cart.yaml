@@ -1,0 +1,40 @@
+goto_settlement_page:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_settlement"
+   action: click
+clear:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_manager"
+   action: click
+add_item:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_add"
+   action: click
+remove_item:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_subtract"
+   action: click
+select_item:
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/cb_check' and @checked='false']"
+   action: click_by_index
+
+deselect_item:
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/cb_check' and @checked='true']"
+   action: click_by_index
+#合计金额
+total_price:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/tv_total_price"
+   action: text
+#是否全是选择状态
+is_all_check:
+ - by: xpath
+   locator: "//*[@resource-id='com.xfyoucai.youcai:id/cb_all_check_shop_cart' and @checked='true']"
+   action: len > 0
+#全选按钮
+all_check:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/cb_all_check_shop_cart"
+   action: click
