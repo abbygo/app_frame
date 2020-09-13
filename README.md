@@ -1,4 +1,32 @@
-# yaml动作详解
+# app_frame介绍
+
+app_frame 是一个UI测试框架
+
+## 设计理念
+
+约定超过配置
+
+整合了appium 、pytest 、allure
+
+## 主要特点
+
+- 集成了appium 的强大功能
+
+- 融合了PO设计模式
+
+- 可以根据YAML数据格式自动生成page页面，提升工作效率
+
+- 使用[`pytest，`](https://docs.pytest.org/数百个插件随时可用。
+
+- 有了[`诱惑力`](https://docs.qameta.io/allure/)，测试报告可以相当不错和强大
+
+  
+
+# 如何开始？ 
+
+
+
+## yaml动作详解
 
 ```
 demo.yaml
