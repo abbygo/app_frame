@@ -9,6 +9,7 @@ screenshot_root_dir=os.path.join(base_dir,"outputs",'screenshots')
 data_dir=os.path.join(base_dir,"testdata")
 video_dir=os.path.join(base_dir,"outputs",'video')
 page_path=os.path.join(base_dir,"page")
+yaml_path=os.path.join(page_path,"yaml")
 
 
 

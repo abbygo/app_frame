@@ -2,31 +2,32 @@
 import os
 
 from common.base_page import BasePage
-from common.dir_config import page_path
+from common.dir_config import  yaml_path
 from page.category_page import CategoryPage
 from page.commodity_details_page import CommodityDetailsPage
 from page.shoping_cart_page import ShopingCartPage
 
 
 class FirstPage(BasePage):
+    path = os.path.join(yaml_path, 'first.yaml')
     def get_first_item_name(self):
         '''
             进入到商品详情
             '''
-        res=self.steps(os.path.join(page_path, 'first.yaml'))
+        res=self.steps(self.path)
         return res
 
     def goto_commodity_details(self):
         '''
             进入到商品详情
             '''
-        self.steps(os.path.join(page_path, 'first.yaml'))
+        self.steps(self.path)
         return CommodityDetailsPage(self._driver)
     def goto_category(self):
         '''
             进入商品分类
             '''
-        self.steps(os.path.join(page_path, 'first.yaml'))
+        self.steps(self.path)
         return CategoryPage(self._driver)
 
     def goto_member_recharge(self):
@@ -40,13 +41,13 @@ class FirstPage(BasePage):
         '''
             进入商品分类
             '''
-        self.steps(os.path.join(page_path, 'first.yaml'))
+        self.steps(self.path)
         return self
     def add_item_to_shop_cart(self):
         '''
            添加商品进入购物车
            '''
-        self.steps(os.path.join(page_path, 'first.yaml'))
+        self.steps(self.path)
         return ShopingCartPage(self._driver)
 
 
