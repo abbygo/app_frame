@@ -1,3 +1,6 @@
+# yaml动作详解
+
+```
 demo.yaml
 #方法名
 add_item:
@@ -7,6 +10,9 @@ add_item:
    locator: "com.xfyoucai.youcai:id/tv_add_shop_car"
  #动作：点击
    action: click
+
+```
+
 | 动作（action）    | 解释                                             |
 | ----------------- | ------------------------------------------------ |
 | click             | 执行点击操作                                     |
