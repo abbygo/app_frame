@@ -7,7 +7,7 @@ get_item_name:
    locator: "com.xfyoucai.youcai:id/tv_commodity_short_name"
    action: text
 goto_settlement_page:
-#点击立即购买按钮-》选择规格--》选择数量--》点击确定
+#点击立即购买按钮-》选择规格--》选择数量--》点击确定，
  - by: id
    locator: "com.xfyoucai.youcai:id/tv_shop_buy"
    action: click
