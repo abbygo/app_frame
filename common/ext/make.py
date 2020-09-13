@@ -12,6 +12,7 @@ from common.utils import is_support_multiprocessing
 
 
 def format_pytest_with_black(*python_paths: Text) -> NoReturn:
+
     logger.info("format pytest cases with black ...")
     try:
         if is_support_multiprocessing() or len(python_paths) <= 1:
