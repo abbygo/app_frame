@@ -18,7 +18,7 @@ app_frame 是一个UI测试框架
 
 - 使用[`pytest，`](https://docs.pytest.org/数百个插件随时可用。
 
-- 有了[`诱惑力`](https://docs.qameta.io/allure/)，测试报告可以相当不错和强大
+- 有了allure，测试报告可以相当不错和强大，测试报告可以相当不错和强大
 
   
 
