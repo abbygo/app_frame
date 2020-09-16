@@ -10,6 +10,14 @@ class ProFilePage(BasePage):
     def go_to_pay_order(self):
         self.steps(self.path)
         return self
+    def back(self):
+        self.steps(self.path)
+        return self
+
+    def get_title(self):
+        title=self.steps(self.path)
+        return title
+
 
     def go_to_send(self):
         self.steps(self.path)

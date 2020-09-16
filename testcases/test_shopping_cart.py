@@ -1,10 +1,4 @@
-# abby
-import os
 
-import pytest
-import yaml
-
-from common.dir_config import data_dir
 from page.app import App
 
 

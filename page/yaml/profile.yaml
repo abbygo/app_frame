@@ -18,3 +18,15 @@ get_all_order:
  - by: id
    locator: "com.xfyoucai.youcai:id/tv_all_order"
    action: click
+
+back:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_left_back"
+   action: click
+
+get_title:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/txt_title"
+   action: text
+
+

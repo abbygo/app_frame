@@ -66,3 +66,7 @@ goto_pay_page:
  - by: id
    locator: "com.xfyoucai.youcai:id/tv_pay"
    action: click
+back:
+ - by: id
+   locator: "com.xfyoucai.youcai:id/btn_left_back"
+   action: click

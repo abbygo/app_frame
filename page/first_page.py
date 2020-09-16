@@ -47,8 +47,17 @@ class FirstPage(BasePage):
         '''
            添加商品进入购物车
            '''
+        res=self.steps(self.path)
+        return res
+
+    def choose_specifications_add_item_to_shop_cart(self):
+        '''
+           # 选择规格后加入购物车，比如肉就要250k,500k
+           '''
         self.steps(self.path)
         return ShopingCartPage(self._driver)
+
+
 
 
 

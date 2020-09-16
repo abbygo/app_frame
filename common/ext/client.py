@@ -20,7 +20,7 @@ def main():
         sys.exit(0)
     args = parser.parse_args()
 
-    sys.stdout.write(str(args))
+    # sys.stdout.write(str(args))
     # 调用生成用例的方法
     main_yaml_2py_page(args)
 

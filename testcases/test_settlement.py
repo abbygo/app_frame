@@ -20,6 +20,7 @@ class TestSettlement:
             # 然后在回到购物车页面
             self.main.goto_shoping_cart()
 
+
     @pytest.mark.parametrize('data',
                              yaml.safe_load(open(os.path.join(data_dir, 'data_settlement.yaml'), encoding='utf-8')))
     def test_shopping_cart_to_settlement(self, data):
@@ -28,7 +29,7 @@ class TestSettlement:
             self.settlement_page.add_pick_up_point(data['name'],data['phone'])
         if self.settlement_page.slide_to_bottom().is_open_item_but():
             self.settlement_page.open_item_list()
-        self.settlement_page.slide_to_bottom().goto_pay_page()
+        self.settlement_page.slide_to_bottom().goto_pay_page().back()
 
     def test_commodity_details_page_to_settlement(self):
         self.main.goto_home().slide_to_bottom().goto_commodity_details().goto_settlement_page()

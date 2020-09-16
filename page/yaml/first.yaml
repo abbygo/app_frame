@@ -16,6 +16,14 @@ add_item_to_shop_cart:
  - by: xpath
    locator: "//*[@resource-id='com.xfyoucai.youcai:id/buyCarImg' and @enabled='true']"
    action: click_by_index
+ - by: xpath
+   locator: "//*[@text='加入购物车']"
+   action: len > 0
+#选择规格后加入购物车，比如肉就要250k,500k
+choose_specifications_add_item_to_shop_cart:
+ - by: xpath
+   locator: "//*[@text='加入购物车']"
+   action: click
 
 goto_category:
  - by: id
